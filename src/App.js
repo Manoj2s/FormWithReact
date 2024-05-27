@@ -56,16 +56,16 @@ function App() {
         <fieldset>
           <legend>Basic Information</legend>
           <label className="input_label">Enter your Name:</label>
-          <input className="inputbox" type="text" placeholder="Enter your name" onChange={nameChange} value={name} />
+          <input className="inputbox" type="text" placeholder="Enter your name" onChange={nameChange} value={name} required />
 
           <label className="input_label">Enter your Email:</label>
-          <input className="inputbox" type="email" placeholder="Enter your Email" onChange={emailChange} value={email}/>
+          <input className="inputbox" type="email" placeholder="Enter your Email" onChange={emailChange} value={email}required/>
 
           <label className="input_label">Enter your Password:</label>
-          <input className="inputbox" type="password" placeholder="" onChange={passwordChange} value={password}/>
+          <input className="inputbox" type="password" placeholder="" onChange={passwordChange} value={password} required/>
 
           <label className="input_label">Confirm your Password:</label>
-          <input className="inputbox" type="password" placeholder="" onChange={confirmPasswordChange} value={confirmPassword} />
+          <input className="inputbox" type="password" placeholder="" onChange={confirmPasswordChange} value={confirmPassword} required />
 
           <div className="gender_box">
             <p className="input_label">Choose your Gender:</p>
@@ -87,12 +87,13 @@ function App() {
             placeholder="Enter your DOB"
             onChange={dobChange}
             value={dob}
+            required="dob"
           />
           <br />
 
           <label className="input_label">Enter your Address:</label>
           <br />
-          <textarea className="inputbox" onChange={addressChange} value={address} ></textarea>
+          <textarea className="inputbox" onChange={addressChange} value={address} required ></textarea>
           <br />
           <button type="submit">Submit</button>
         </fieldset>
